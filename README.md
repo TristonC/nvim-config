@@ -1,6 +1,6 @@
 # nvim config for deep learning programmer
 
-A repo to config my Neovim on my MacOS and Ubunto Linux systems. It might need
+A repo to config the Neovim on my MacOS and Ubuntu Linux systems. It might need
 adjustment if it used in other OS.
 
 My current work mostly focus on deep learing related, so the programming
@@ -13,4 +13,12 @@ of my settings follow the
 ```bash
 cd ~/.config
 git clone https://github.com/TristonC/nvim-config.git nvim
+```
+
+And then launch your neovim by (replace the /path/to/your/project to the real
+path to your project)
+
+```bash
+cd /path/to/your/project/
+nvim ./
 ```
