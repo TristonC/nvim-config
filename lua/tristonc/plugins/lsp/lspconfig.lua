@@ -9,7 +9,6 @@ return {
 	config = function()
 		-- import lspconfig plugin
 		local lspconfig = require("lspconfig")
-		lspconfig.clangd.setup({})
 
 		-- import mason_lspconfig plugin
 		local mason_lspconfig = require("mason-lspconfig")
@@ -98,6 +97,19 @@ return {
 							},
 							completion = {
 								callSnippet = "Replace",
+							},
+						},
+					},
+				})
+			end,
+			["pyright"] = function()
+				-- configure pyright server
+				lspconfig["pyright"].setup({
+					capabilities = capabilities,
+					settings = {
+						python = {
+							analysis = {
+								typeCheckingMode = "basic",
 							},
 						},
 					},

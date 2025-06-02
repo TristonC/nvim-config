@@ -22,6 +22,11 @@ return {
 
 		mason_tool_installer.setup({
 			ensure_installed = {
+				-- LSP servers
+				"lua-language-server", -- lua_ls
+				"pyright", -- Python language server
+				"clangd", -- C/C++ language server
+				-- Formatters and linters
 				"prettier", -- prettier formatter
 				"stylua", -- lua formatter
 				"isort", -- python formatter

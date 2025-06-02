@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+# Swap files
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+
+# Vim backup files
+*~
+
+lazy-lock.json
