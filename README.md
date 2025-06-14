@@ -22,3 +22,9 @@ path to your project)
 cd /path/to/your/project/
 nvim ./
 ```
+
+## Ollama integration
+
+This configuration includes the [nomnivore/ollama.nvim](https://github.com/nomnivore/ollama.nvim) plugin.
+After launching Neovim you can start a chat session with `<leader>oo`.
+The plugin also registers an `ollama` completion source for `nvim-cmp`.
