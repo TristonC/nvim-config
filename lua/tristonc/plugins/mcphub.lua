@@ -5,6 +5,11 @@ return {
 	},
 	build = "npm install -g mcp-hub@latest", -- Installs `mcp-hub` node binary globally
 	config = function()
-		require("mcphub").setup()
+		require("mcphub").setup({
+			integrations = {
+				codecompanion = false,
+				copilotchat = false,
+			},
+		})
 	end,
 }
