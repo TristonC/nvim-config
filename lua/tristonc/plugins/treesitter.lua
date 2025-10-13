@@ -15,6 +15,10 @@ return {
 				enable = true,
 				additional_vim_regex_highlighting = false,
 			},
+			ignore_install = {},
+			auto_install = true,
+			sync_install = false,
+			modules = {},
 			-- enable indentation
 			indent = { enable = true },
 			-- enable autotagging (w/ nvim-ts-autotag plugin)
