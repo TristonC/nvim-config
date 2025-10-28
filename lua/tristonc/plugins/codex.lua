@@ -4,7 +4,7 @@ return {
 		local codex = require("codex")
 		codex.setup({
 			-- Use a floating split with consistent sizing and style.
-			split = "vertical", -- horizontal|vertical|float
+			split = "float", -- horizontal|vertical|float
 			size = 0.3,
 			float = {
 				width = 0.8,
