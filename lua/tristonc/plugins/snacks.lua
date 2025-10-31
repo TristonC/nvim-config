@@ -14,6 +14,8 @@
 return {
 	{
 		"folke/snacks.nvim",
+		lazy = false,
+		priority = 1000,
 		keys = {
 			-- I use this keymap with mini.files, but snacks explorer was taking over
 			-- https://github.com/folke/snacks.nvim/discussions/949

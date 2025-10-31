@@ -82,7 +82,7 @@ return {
 
 		-- Configure LSP servers manually
 		-- Lua language server
-		lspconfig["lua_ls"].setup({
+		lspconfig.lua_ls.setup({
 			capabilities = capabilities,
 			settings = {
 				Lua = {
@@ -98,7 +98,7 @@ return {
 		})
 
 		-- Python language server
-		lspconfig["pyright"].setup({
+		lspconfig.pyright.setup({
 			capabilities = capabilities,
 			settings = {
 				python = {
@@ -110,7 +110,7 @@ return {
 		})
 
 		-- C/C++ language server
-		lspconfig["clangd"].setup({
+		lspconfig.clangd.setup({
 			capabilities = capabilities,
 		})
 	end,
