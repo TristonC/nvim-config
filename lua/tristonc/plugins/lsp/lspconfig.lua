@@ -7,9 +7,6 @@ return {
 		{ "folke/neodev.nvim", opts = {} },
 	},
 	config = function()
-		-- import lspconfig plugin
-		local lspconfig = require("lspconfig")
-
 		-- import cmp-nvim-lsp plugin
 		local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
@@ -82,7 +79,7 @@ return {
 
 		-- Configure LSP servers manually
 		-- Lua language server
-		lspconfig.lua_ls.setup({
+		vim.lsp.config("lua_ls", {
 			capabilities = capabilities,
 			settings = {
 				Lua = {
@@ -98,7 +95,7 @@ return {
 		})
 
 		-- Python language server
-		lspconfig.pyright.setup({
+		vim.lsp.config("pyright", {
 			capabilities = capabilities,
 			settings = {
 				python = {
@@ -110,8 +107,13 @@ return {
 		})
 
 		-- C/C++ language server
-		lspconfig.clangd.setup({
+		vim.lsp.config("clangd", {
 			capabilities = capabilities,
 		})
+
+		-- Enable the configured servers
+		vim.lsp.enable("lua_ls")
+		vim.lsp.enable("pyright")
+		vim.lsp.enable("clangd")
 	end,
 }
